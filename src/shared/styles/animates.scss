@@ -1,0 +1,18 @@
+@keyframes gradient-text {
+  0% {
+    background-position: 0;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+
+@mixin text-animate-gradient {
+  animation: gradient-text 2s linear infinite;
+  background: -webkit-linear-gradient(79.35deg, #269ae1 20.57%, #3bd75c 87.76%);
+}

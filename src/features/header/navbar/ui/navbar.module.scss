@@ -1,0 +1,36 @@
+@import 'src/shared/styles/animates.scss';
+@import 'src/shared/styles/device-sizes.scss';
+
+.headerNavbar {
+  ul {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 40px;
+    transition: 0.5s;
+
+    @media (max-width: $device-laptop) {
+      column-gap: 24px;
+    }
+
+    li,
+    li > * {
+      color: var(--base-white);
+      font-family: var(--secondary-font);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: $device-laptop) {
+    margin-left: 2vw;
+  }
+
+  @media (max-width: $device-tabletL) {
+    display: none;
+  }
+}

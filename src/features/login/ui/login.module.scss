@@ -1,0 +1,93 @@
+@import 'src/shared/styles/device-sizes.scss';
+
+.loginModalWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.loginModal {
+  align-self: flex-start;
+  padding: 40px;
+  max-width: 400px;
+  box-sizing: content-box;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 20px;
+  flex-direction: column;
+  background: var(--black-opacity);
+  box-shadow: var(--shadow-bottom);
+
+  @media (max-width: $device-tabletS) {
+    padding: 20px;
+    max-width: 303px;
+  }
+}
+
+.backIcon {
+  width: 100%;
+  margin-bottom: 20px;
+
+  button {
+    cursor: pointer;
+    @media (hover: hover) {
+      &:hover {
+        svg path[stroke] {
+          stroke: var(--gray-light);
+        }
+      }
+    }
+  }
+
+  @media (max-width: $device-tabletS) {
+    margin-bottom: 0;
+  }
+}
+
+.loginButton {
+  @media (max-width: $device-tabletS) {
+    padding: 14px 30px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.loginDoubleTitle {
+  @media (max-width: $device-mobileL) {
+    font-size: 24px;
+    line-height: 27px;
+
+    & > span {
+      font-size: 26px;
+      line-height: 29px;
+      top: -10px;
+    }
+  }
+}
+
+.logoFirstPart {
+  background: -webkit-linear-gradient(70.35deg, #00c4f5 -1.57%, #f3f31e 26.76%);
+  background-size: 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: $device-mobileL) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+.logoSecondPart {
+  background: -webkit-linear-gradient(66.35deg, #ffffff -11.57%, #f3f31e 19.76%);
+  background-size: 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: $device-mobileL) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}

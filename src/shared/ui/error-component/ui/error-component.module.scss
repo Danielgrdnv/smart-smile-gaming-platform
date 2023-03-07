@@ -1,0 +1,39 @@
+@import '../../../styles/device-sizes';
+
+.inputErrorIcon {
+  margin-left: 7px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  svg {
+    height: 100%;
+    width: 100%;
+
+    path[fill] {
+      fill: var(--base-error);
+    }
+  }
+
+  @media (max-width: $device-mobileL) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.inputErrorMessage {
+  position: absolute;
+  left: 30px;
+  top: -10px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--base-gray);
+  border-radius: 2px;
+  padding: 3px 6px;
+  background-color: var(--gray-background);
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  max-width: 100%;
+  word-break: break-word;
+  z-index: var(--input-error-z-index);
+}

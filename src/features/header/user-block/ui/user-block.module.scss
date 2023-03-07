@@ -1,0 +1,67 @@
+@import '../../../../shared/styles/device-sizes';
+
+.userBlock {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  column-gap: 40px;
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  @media (max-width: $device-tablet) {
+    column-gap: 20px;
+  }
+}
+
+.userInfoWrapper {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  column-gap: 40px;
+  row-gap: 5px;
+  grid-template-rows: 1fr;
+  pointer-events: none;
+
+  @media (max-width: $device-tablet) {
+    grid-auto-flow: row;
+    justify-items: end;
+  }
+
+  @media (max-width: $device-tabletL) {
+    pointer-events: auto;
+  }
+}
+
+.userInfo {
+  color: var(--base-white);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  & > span {
+    font-family: inherit;
+    line-height: inherit;
+    color: var(--gray-light);
+
+    &:after {
+      content: ': ';
+    }
+  }
+
+  @media (max-width: $device-tablet) {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.userBlockMenuButton {
+  padding: 5px 13px;
+
+  svg path {
+    stroke: black;
+  }
+}

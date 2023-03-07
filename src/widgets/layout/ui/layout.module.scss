@@ -1,0 +1,15 @@
+@import 'src/shared/styles/device-sizes.scss';
+
+.layout {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('../assets/background-image.svg');
+  background-size: cover;
+  background-color: white;
+
+  @media (max-width: $device-tabletL) {
+    align-items: center;
+  }
+}

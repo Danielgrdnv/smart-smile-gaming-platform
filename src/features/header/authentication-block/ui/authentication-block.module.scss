@@ -1,0 +1,15 @@
+@import '../../../../shared/styles/device-sizes';
+
+.authenticationBlock {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: max-content max-content;
+
+  button {
+    max-height: 50px;
+  }
+
+  @media (max-width: $device-tabletL) {
+    column-gap: 24px;
+  }
+}

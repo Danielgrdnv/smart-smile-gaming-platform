@@ -1,0 +1,53 @@
+@import 'styles/themes/light';
+@import 'styles/variables';
+@import 'styles/clear';
+@import '../shared/styles/device-sizes';
+
+@font-face {
+  font-family: Wakid;
+  src: url('styles/fonts/wakid/Wakid.otf') format('opentype'), url('styles/fonts/wakid/Wakid.woff') format('woff'),
+    url('styles/fonts/wakid/Wakid.woff2') format('woff2');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 375px;
+  box-sizing: border-box;
+  font-family: Wakid, 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  color: white;
+  background-color: #202020;
+}
+
+* {
+  font-family: Wakid, 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #575757;
+  border-radius: 2px;
+}

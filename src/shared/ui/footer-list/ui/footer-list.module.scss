@@ -1,0 +1,31 @@
+.footerList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerListHeader {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--base-white);
+}
+
+.footerListItem {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--base-white);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--gray-light);
+    }
+  }
+}

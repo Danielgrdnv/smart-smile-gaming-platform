@@ -1,0 +1,70 @@
+.inputDefaultWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  border: 3px solid var(--gray-light);
+  border-radius: 2px;
+  max-height: 50px;
+  &:hover {
+    border: 3px solid var(--base-black);
+  }
+
+  :has(input:disabled) {
+    border: 3px solid var(--gray-middle);
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: var(--base-black);
+
+  &::placeholder {
+    font-weight: 300;
+    color: var(--base-gray);
+    text-transform: capitalize;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: var(--gray-middle);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &::placeholder {
+      color: var(--gray-middle);
+    }
+  }
+
+}
+
+.inputError {
+  border: 3px solid var(--base-error);
+}
+
+.eyeIcon {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+
+  svg path[stroke] {
+    stroke: var(--base-black);
+  }
+}
+
+.eyeIconError {
+  svg path[stroke] {
+    stroke: var(--base-error);
+  }
+}

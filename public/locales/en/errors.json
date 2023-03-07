@@ -1,0 +1,6 @@
+{
+  "code": {
+    "400": "Something went wrong",
+    "*": "Something went wrong"
+  }
+}

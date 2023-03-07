@@ -1,0 +1,63 @@
+@import '/src/shared/styles/device-sizes';
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background: var(--base-white);
+  max-width: 515px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 2px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 11fr 1fr;
+  width: 100%;
+  padding: 18px 18px 0;
+  box-sizing: border-box;
+  align-items: center;
+
+  &.upper {
+    text-transform: uppercase;
+  }
+}
+
+.backIcon, .crossIcon {
+  cursor: pointer;
+  align-self: start;
+
+}
+
+.backIcon {
+  justify-self: start;
+}
+
+.crossIcon {
+  justify-self: end;
+}
+
+.title {
+  justify-self: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 40px 40px;
+  width: 100%;
+  gap: 22px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  margin-top: 0;
+}

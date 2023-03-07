@@ -1,0 +1,14 @@
+@import 'src/shared/styles/animates.scss';
+
+.link {
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  color: var(--base-white);
+  text-transform: none;
+
+  &:visited {
+    color: var(--base-white);
+  }
+
+  @include hover-text-animate-gradient;
+}
