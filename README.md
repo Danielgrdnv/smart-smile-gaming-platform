@@ -43,7 +43,7 @@ Roadmap:
 [React-url]: https://reactjs.org/
 [FSD]: https://img.shields.io/badge/FSD-Architectural%20methodology-brightgreen
 [FSD-url]: https://feature-sliced.design/
-[Effector]: https://img.shields.io/badge/FSD-State%20Manager-brightgreen
+[Effector]: https://img.shields.io/badge/Effector-State%20Manager-brightgreen
 [Effector-url]: https://effector.dev/
 [Storybook]: https://img.shields.io/badge/Storybook-UI%20documentation-brightgreen
 [Storybook-url]: https://storybook.js.org/
