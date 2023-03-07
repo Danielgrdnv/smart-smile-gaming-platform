@@ -49,7 +49,7 @@ Roadmap:
 [Storybook-url]: https://storybook.js.org/
 [Vite]: https://img.shields.io/badge/Vite-Build%20tool-brightgreen
 [Vite-url]: https://vitejs.dev/
-[Vitest]: https://img.shields.io/badge/Vite-unit%20test%20framework-brightgreen
+[Vitest]: https://img.shields.io/badge/Vitest-unit%20test%20framework-brightgreen
 [Vitest-url]: https://vitest.dev/
-[SCSS]: https://img.shields.io/badge/Vite-preprocessor-brightgreen
+[SCSS]: https://img.shields.io/badge/SCSS-preprocessor-brightgreen
 [SCSS-url]: https://sass-lang.com/
