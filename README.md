@@ -1,8 +1,8 @@
 # SmartSmile
 ## Gaming platform for education
-Backend: *here is the link to the repository*
+Backend: https://github.com/KuznetsovSemyon/diplom-back.git
 
-!!! The product is in very early early development and is not indicative at the moment.
+!!! The product is in very early development and is not indicative at the moment.
 
 ### Built With
 * [![React][React.js]][React-url]
@@ -16,6 +16,9 @@ Backend: *here is the link to the repository*
 
 
 Roadmap:
+- [ ] Integrate with backend
+  - [ ] Authorization/Registration
+  - [ ] Pages
 - [ ] Add pages
   - [ ] Main
   - [ ] Games
@@ -26,6 +29,7 @@ Roadmap:
   - [x] Login
   - [ ] Registration
   - [ ] Sidebar for mobile
+  - [ ] News
 - [ ] Multi-language Support
     - [ ] English
     - [ ] Russian
